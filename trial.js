@@ -1,18 +1,12 @@
-var day = 5;
-switch(day){
-    case 1:
-        document.write("Sunday ");
-        break;
-    case 2:
-        document.write("Monday ");
-    case 3:
-         document.write("Tuesday ");
-        break;
-    case 4:
-        document.write("Wednesday ");
-        break;
-    default:
-        document.write("Wrong input");
+
+var output = add2Number(3,5);
+document.write(output);
+
+function add2Number(a,b)
+{
+    var total = a + b;
+    return total;
 }
+
 
 
