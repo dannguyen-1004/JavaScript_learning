@@ -1,28 +1,33 @@
-
-/*var car = {
-    car_brand:"Tesla",
-    car_model: "Model 3",
+var car = {
+    brand: "Tesla",
+    model: "Model 3",
     price: 35000,
 
-    teslaAutoPilot: function(){
-        document.write("This car has autopilot");
-    }
-
-    
-}*/
-//instead we can do create new object
-function Cars(car_brand,car_model,price)
-{
-    this.car_brand = car_brand;
-    this.car_model = car_model;
-    this.price = price;
-    this.tesLaAutoPilot = function()
+    teslaAutoPilot: function()
     {
-        document.write("This car has autopilot");
+        return "This car has autopilot";
+    }
+}
+//add properties
+car.oil = "$30";
+document.write(car.oil);
+
+//delete properties
+delete car.model;
+document.write( car.model);
+
+
+/*function Cars(brand, model, price)
+{
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+    this.teslaAutoPilot = function(){
+        document.write ("This car has autopilot");
     }
 }
 
-var c1 = new Cars("Tesla","Model", 35000);
-var c2 = new Cars("Honda", "Model P", 45000);
-c1.tesLaAutoPilot();
-document.write("<h2>" + c2.car_model);
+var c1 = new Cars("Tesla", "Model 3", 35000);
+document.write(c1.model);*/
+
+
