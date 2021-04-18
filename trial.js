@@ -1,18 +1,9 @@
-//DOM manipulation & getelementbyId method
-function greeting()
+//DOM manipulation
+function changeStyle()
 {
-    var select = document.getElementById("selectbox");
-
-    if(alert(select.options[select.selectedIndex].value)== "Vietnamese")
+    var element = document.getElementsByClassName("mypara");
+    for( var i = 0; i < element.length; i++)
     {
-        alert("Xin chao!");
-    }
-    else if(alert(select.options[select.selectedIndex].value) == "American")
-    {
-        alert("Hello!");
-    }
-    else
-    {
-        alert("Ni hao!");
+        element[i].style.color="red";
     }
 }
