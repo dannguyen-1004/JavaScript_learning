@@ -1,15 +1,18 @@
 //DOM manipulation & getelementbyId method
-function function1()
+function greeting()
 {
-    var rd1 = document.getElementById("rd1");
-    var rd2 = document.getElementById("rd2");
+    var select = document.getElementById("selectbox");
 
-    if(rd1.checked == true)
+    if(alert(select.options[select.selectedIndex].value)== "Vietnamese")
     {
-        alert("Correct");
+        alert("Xin chao!");
+    }
+    else if(alert(select.options[select.selectedIndex].value) == "American")
+    {
+        alert("Hello!");
     }
     else
     {
-        alert("Incorrect");
+        alert("Ni hao!");
     }
 }
