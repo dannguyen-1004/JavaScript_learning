@@ -7,9 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <img id="img" onmouseover="setNewImage()" onmouseout="setOldImage()" width="50%" src="https://th.bing.com/th/id/Rf7f160c4d53748cea7e2a29074ffb85b?rik=MSNe%2bFdA0PbCuQ&pid=ImgRaw">  
-    
-    
+    <form onsubmit="return validate()" action="welcome.html">
+    <input id="uname" placeholder="User name"><br><br>
+
+    <input id="pass" type="password" placeholder="Password"><br><br>
+
+    <button type="submit">Submit</button>
+    </form>
 
     <script src="trial.js"></script>
 </body>
